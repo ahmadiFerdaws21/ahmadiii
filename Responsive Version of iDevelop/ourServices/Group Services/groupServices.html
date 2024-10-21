@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDevelop Tech Company</title>
+        <!-- Some Icons from CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" /> 
+        <!-- Using of ION ICons -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="groupServicesStyles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar-wrapper">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../Images/LogoOnlyfooter.png" alt="Company Logo" class="company-logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav mb-2 me-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Products & Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Media & Publication</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Support</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search and Get Started button -->
+                    <div class="d-flex align-items-center me-4 text-white">
+                        <a class="btn btn-link text-white me-3 " data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa fa-search"></i>
+                        </a>
+                        <a href="#" class="btn btn-orange">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Our Service Title -->
+        <div class="text-center text-white position-absolute w-100" style="top: 30%;">
+            <h1>Our Services</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a class="text-white" href="../../index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="../ourService.html">Our Services</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Our Services List</li>
+
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Sidebar (Offcanvas) -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Products & Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Media & Publication</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal for search -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <div class="services-container">
+    <!-- Left side: Services List -->
+     <div class="left-service-list">
+      <div class="container-fluid pb-4 services-title-container ">
+        <div class="traingle"></div>
+        <h2 class="mb-0 service-list-title">All Services</h2>
+      </div>
+        <div class="service-list">
+            <ul>
+              <li onclick="showService(1)">Web Design & Development</li>
+              <li onclick="showService(2)">Mobile Application Development</li>
+              <li onclick="showService(3)">Database Development</li>
+              <li onclick="showService(4)">Networking Services</li>
+              <li onclick="showService(5)">Tech Consultancy</li>
+              <li onclick="showService(6)">Training & Capacity Building</li>
+              <li onclick="showService(7)">Graphic & Media Services</li>
+              <li onclick="showService(8)">Hosting Services</li>
+            </ul>
+          </div>
+          <div class="quick-solution">
+              <h3>Get a free quick solution of tech problems</h3>
+              <button>Contact</button>
+              <img class="quick-solution-img" src="../../Images/Group Services Images/for quick solution.png" alt="">
+              <div class="traingle-quickSoulution"></div>
+
+            </div>
+     </div>
+
+
+    <!-- Right side: Service Content -->
+    <div class="service-content">
+      <img id="service-image" src="../../Images/Group Services Images/webDesignPic.jpg" class="service-image" alt="Service Image">
+      <div id="service-description" class="service-description">
+        <h4 id="service-title">Web Design & Development</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dignissimos soluta beatae ipsam aliquid facere exercitationem ut facilis eveniet, repudiandae numquam ratione, inventore iste est. Sed suscipit quia aspernatur aliquid?</p>
+      </div>
+
+
+      <div id="extra-content">
+
+      </div>
+    </div>
+  </div>
+</body>
+<footer class="footer">
+  <div class="container py-5 footer-container1">
+      <div class="row text-white flex-md-row flex-column-reverse footer-body-container mb-4">
+          <!-- Left Column for 1024px and above -->
+          <div class="col-md-3 d-flex flex-column align-items-md-start text-center text-md-start mb-4 mb-ms-5">
+              <img src="../../Images/LogoOnlyfooter.png" alt="Company Logo" class=" footer-company-logo" height="70px">
+              <div class="d-flex">
+                  <h1 class="h6">Address:</h1>
+                  <p class="ms-2">Kart-e-Char, Kabul Afghanistan</p>
+              </div>
+              <div class="d-flex">
+                  <h1 class="h6">Email:</h1>
+                  <p class="ms-2">zafarshafaq34@gmail.com</p>
+              </div>
+              <div class="d-flex">
+                  <h1 class="h6">Phone:</h1>
+                  <p class="ms-2">+93(0)784 689 192</p>
+              </div>
+          </div>
+
+          <!-- Right Column for Services, Links, and Support -->
+          <div class="col-md-9">
+              <div class="row">
+                  <div class="col-md-4 mb-4 mb-md-5">
+                      <h1 class="h6 our-service-title">Our Services</h1>
+                      <ul class="list-unstyled">
+                          <li class="footer-ourServices-links"><a href="#" class="text-muted">Software Development</a></li>
+                          <li class="footer-ourServices-links"><a href="#" class="text-muted">Web Development</a></li>
+                          <li class="footer-ourServices-links"><a href="#" class="text-muted">Mobile Development</a></li>
+                          <li class="footer-ourServices-links"><a href="#" class="text-muted">App Development</a></li>
+                          <li class="footer-ourServices-links"><a href="#" class="text-muted">Hosting Service</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-5">
+                      <h1 class="h6 our-service-title">Quick Links</h1>
+                      <ul class="list-unstyled">
+                          <li class="footer-quickLinks"><a href="#" class="text-muted">Home</a></li>
+                          <li class="footer-quickLinks"><a href="#" class="text-muted">About</a></li>
+                          <li class="footer-quickLinks"><a href="#" class="text-muted">Services</a></li>
+                          <li class="footer-quickLinks"><a href="#" class="text-muted">Gallery</a></li>
+                          <li class="footer-quickLinks"><a href="#" class="text-muted">Contact</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-5">
+                      <h1 class="h6 our-service-title">Support</h1>
+                      <ul class="list-unstyled">
+                          <li class="footer-support-links"><a href="#" class="text-muted">Help Center</a></li>
+                          <li class="footer-support-links"><a href="#" class="text-muted">Ticket Support</a></li>
+                          <li class="footer-support-links"><a href="#" class="text-muted">Contact Us</a></li>
+                          <li class="footer-support-links"><a href="#" class="text-muted">Community</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Bottom row for copyright and social media -->
+      <div class="row footer-container">
+          <div class="col-md-6">
+              <p class="text-white iDevelop-footer-text1">
+                  © 2024 iDevelop. All Rights Reserved | Powered by
+                  <a href="#" class="iDevelop-footer-text2">iDevelop Software Solution</a>
+              </p>
+          </div>
+          <div class="col-md-6 text-md-end text-center mt-2 mt-md-0 footer-social-media">
+              <a href="#" class="text-white me-3 social-link"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-white me-3 social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white me-3 social-link"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-white social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+  </div>
+  <script src="JS/script.js"></script>
+  <script>
+    const services = {
+      1: {
+        title: 'Web Design & Development',
+        image: '../../Images/Group Services Images/webDesignPic.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      2: {
+        title: 'Mobile Application Development',
+        image: '../../Images/Group Services Images/MobileApplicationPic.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      3: {
+        title: 'Database Development',
+        image: '../../Images/Group Services Images/Database.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      4: {
+        title: 'Networking Services',
+        image: '../../Images/Group Services Images/Network.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      5: {
+        title: 'Tech Consultancy',
+        image: '../../Images/Group Services Images/techConsultancy.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      6: {
+        title: 'Training & Capacity Building',
+        image: '../../Images/Group Services Images/trainingAndCapacity.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      7: {
+        title: 'Graphic & Media Services',
+        image: '../../Images/Group Services Images/graphicAndMedia.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      },
+      8: {
+        title: 'Hosting Services',
+        image: '../../Images/Group Services Images/webHosting.jpg',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis hic et vel consequuntur sunt culpa libero iure architecto esse, omnis in quisquam perspiciatis corrupti quidem harum at illum sint recusandae.'
+      }
+    };
+
+    // Function to update the image and description based on the clicked service
+    function showService(serviceId) {
+      document.getElementById('service-image').src = services[serviceId].image;
+      document.getElementById('service-title').innerText = services[serviceId].title;
+      document.getElementById('service-description').querySelector('p').innerText = services[serviceId].description;
+    }
+    // navbar pin to top
+    window.onscroll = function() {
+        var navbar = document.querySelector('.navbar');
+        if (window.scrollY > 160) { 
+            navbar.classList.add('scrolled'); 
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</footer>
+
